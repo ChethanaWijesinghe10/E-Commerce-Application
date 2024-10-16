@@ -1,0 +1,13 @@
+.navbar {
+    background-color: #047304; /* Dark green color */
+    color: rgb(239, 237, 237); /* Change text color to white for better contrast */
+  }
+  
+  .navbar button {
+    color: rgb(247, 247, 247); /* Change button text color */
+  }
+  
+  .navbar button.active {
+    background-color: rgba(21, 3, 3, 0.1); /* Optional: highlight active button */
+  }
+  
