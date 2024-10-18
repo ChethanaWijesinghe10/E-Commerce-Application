@@ -14,7 +14,7 @@ import java.util.function.Function;
 
 @Component
 public class JwtUtils {
-    public static final String SECRET = "your-secret-key";  // Provide your secret key here
+    public static final String SECRET = "jdYnXUj9DYLNuYpyysEMXkDQGhkcq5jcfhj7rN6rM2I=";  // Provide your secret key here
 
     public String generateToken(String userName) {
         Map<String, Object> claims = new HashMap<>();
@@ -54,9 +54,11 @@ public class JwtUtils {
     }
 
     private Boolean isTokenExpire (String token){
+
         return extractExpiration(token).before(new Date());
     }
     public Date extractExpiration(String token){
+
         return  extractClaim(token,Claims::getExpiration);
     }
 
